@@ -63,7 +63,7 @@ export function AboutSection() {
           <div ref={imageRef} className="flex justify-center">
             <Card className="overflow-hidden rounded-lg shadow-lg border-0 bg-card">
               <img
-                src="../public/ppp.jpg"
+                src="/ppp.jpg"
                 alt="portrait"
                 className="w-full aspect-square object-cover"
                 loading="lazy"
