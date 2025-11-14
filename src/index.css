@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-background: 0 0% 100%;
+    --color-foreground: 220 15% 20%;
+    --color-primary: 218 45% 18%;
+    --color-primary-foreground: 0 0% 100%;
+    --color-secondary: 218 40% 35%;
+    --color-secondary-foreground: 0 0% 100%;
+    --color-tertiary: 12 70% 58%;
+    --color-tertiary-foreground: 0 0% 100%;
+    --color-neutral: 0 0% 96%;
+    --color-neutral-foreground: 220 15% 20%;
+    --color-accent: 12 70% 58%;
+    --color-accent-foreground: 0 0% 100%;
+    --color-success: 145 60% 40%;
+    --color-warning: 25 90% 55%;
+    --color-border: 220 10% 80%;
+    --color-input: 220 10% 80%;
+    --color-ring: 218 45% 18%;
+    --color-muted: 220 10% 90%;
+    --color-muted-foreground: 220 8% 45%;
+    --color-card: 0 0% 100%;
+    --color-card-foreground: 220 15% 20%;
+    --color-popover: 0 0% 100%;
+    --color-popover-foreground: 220 15% 20%;
+    --color-destructive: 0 84% 60%;
+    --color-destructive-foreground: 0 0% 100%;
+
+    --font-sans: "DM Sans", sans-serif;
+    --font-body: "Inter", sans-serif;
+
+    --radius: 0.5rem;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-sans text-foreground;
+  }
+
+  h1 {
+    @apply text-h1 font-medium tracking-h1 leading-h1;
+  }
+
+  h2 {
+    @apply text-h2 font-medium;
+  }
+
+  h3 {
+    @apply text-h3 font-medium;
+  }
+
+  p {
+    @apply text-body font-light leading-body text-foreground;
+  }
+
+  small {
+    @apply text-small font-light text-foreground;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
